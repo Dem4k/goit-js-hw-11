@@ -13,12 +13,12 @@ export function renderImages(images) {
         views,
         tags,
       }) => `<li class="gallery-item">
-      <a href="${largeImageURL}"><img src="${webformatURL}" alt="${tags}" />
-          <div>
-            <p>Likes ${likes}</p>
-            <p>Views ${views}</p>
-            <p>Comments ${comments}</p>
-            <p>Downloads ${downloads}</p>
+      <a class="item-link" href="${largeImageURL}"><img class="item-link" src="${webformatURL}" alt="${tags}" />
+          <div class="thumb">
+            <p class="thumb-item">Likes <span class="thumb-counts">${likes}</span></p>
+            <p class="thumb-item">Views <span class="thumb-counts">${views}</span></p>
+            <p class="thumb-item">Comments <span class="thumb-counts">${comments}</span></p>
+            <p class="thumb-item">Downloads <span class="thumb-counts">${downloads}</span></p>
           </div></a>
         </li>
   `
